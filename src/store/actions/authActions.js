@@ -43,9 +43,9 @@ export const checkAuthTimeout = (expiryTime) => {
 
 export const auth = (email, password, isSignUp) => {
 
-    let url = 'https://www.googleapis.com/identitytoolkit/v3/relyingparty/signupNewUser?key=AIzaSyB3JD7UGVy5cJ7Bh-kfiyW37BCBPqrOHoI'
+    let url = 'https://www.googleapis.com/identitytoolkit/v3/relyingparty/signupNewUser?key=[API-KEY]'
     if (!isSignUp) {
-        url = 'https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyB3JD7UGVy5cJ7Bh-kfiyW37BCBPqrOHoI'
+        url = 'https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=[API-KEY]'
     }
 
     return dispatch => {
